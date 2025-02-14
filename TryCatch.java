@@ -46,7 +46,7 @@ final class TryCatch {
 
             // If else statement for invalid input
             if (radDouble < 0) {
-                System.out.println("The radius must be positive.");
+                System.out.println("Invalid input, "+ radString + " is not a valid positive number.");
             } else {
                 // Calculate the volume of the sphere
                 final double volume = (4d / 3d) * Math.PI
@@ -59,6 +59,7 @@ final class TryCatch {
                 System.out.println("cm^3");
             }
         } catch (NumberFormatException error) {
+            // error message
             System.out.println("Invalid input. Please enter a valid radius."
                     + error.getMessage());
         }
